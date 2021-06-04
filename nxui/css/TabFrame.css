@@ -1,0 +1,103 @@
+﻿/************************************ B ************************************/
+
+Button.btn_MDI_AllClose, Button.btn_MDI_AllClose:disabled, Button.btn_MDI_AllClose:selected
+{
+	background			: transparent;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	image				: URL('theme://TabFrame/icon_MDI_AllClose.png');
+}
+Button.btn_MDI_AllClose:mouseover, Button.btn_MDI_AllClose:pushed,
+Button.btn_MDI_AllClose:focused
+{
+	background			: transparent;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	image				: URL('theme://TabFrame/icon_MDI_AllClose_O.png');
+}
+
+/************************************ F ************************************/
+
+Form.frm_MDI
+{
+	background			: URL('theme://TabFrame/tab_MDI_bg.png') repeat-x;
+	border				: 0 none;
+}
+
+/************************************ T ************************************/
+
+Tab.tab_MDI, 
+Tab.tab_MDI:mouseover, Tab.tab_MDI:pushed, Tab.tab_MDI:focused
+{
+	background			: transparent;
+	border				: 0 none;
+	buttonbackground		: URL('theme://TabFrame/tab_MDI_bg_S.png') stretch 5,5;
+	buttonborder			: 0 none;
+	buttonpadding			: 6 3 0 12;
+	buttonmargin			: 0 0 0 0;
+	color				: #666666;
+	font				: antialias bold 10 LG스마트체,Arial;
+	showextrabutton			: true;
+}
+Tab.tab_MDI:selected
+{
+	background			: transparent;
+	border				: 0 none;
+	buttonbackground		: URL('theme://TabFrame/tab_MDI_bg_N.png') stretch 5,5;
+	buttonborder			: 0 none;
+	buttonpadding			: 6 3 0 12;
+	color				: #333333;
+	font				: antialias bold 10 LG스마트체,Arial;
+	showextrabutton			: true;
+}
+Tab.tab_MDI:disabled
+{
+	background			: #ecececff;
+	border				: 0 none;
+	buttonbackground		: transparent;
+	buttonborder			: 0 none;
+	buttonpadding			: 6 3 0 12;
+	color				: #999999ff;
+	font				: antialias bold 9 LG스마트체,Arial;
+	showextrabutton			: true;
+}
+Tab.tab_MDI>#spinupbutton
+{
+	image				: URL('theme://TabFrame/tab_MDI_SpinupN.png');
+}
+Tab.tab_MDI>#spinupbutton:mouseover, Tab.tab_MDI>#spinupbutton:pushed,
+Tab.tab_MDI>#spinupbutton:focused, Tab.tab_MDI>#spinupbutton:selected
+{
+	image				: URL('theme://TabFrame/tab_MDI_SpinupM.png');
+}
+Tab.tab_MDI>#spinupbutton:disabled
+{
+	image				: URL('theme://TabFrame/tab_MDI_SpinupN.png');
+	opacity				: 50%;
+}
+Tab.tab_MDI>#spindownbutton
+{
+	image				: URL('theme://TabFrame/tab_MDI_SpindownN.png');
+}
+Tab.tab_MDI>#spindownbutton:mouseover, Tab.tab_MDI>#spindownbutton:pushed,
+Tab.tab_MDI>#spindownbutton:focused, Tab.tab_MDI>#spindownbutton:selected
+{
+	image				: URL('theme://TabFrame/tab_MDI_SpindownM.png');
+}
+Tab>#spindownbutton:disabled
+{
+	image				: URL('theme://TabFrame/tab_MDI_SpindownN.png');
+	opacity				: 50%;
+}
+Tab.tab_MDI>#extrabutton,
+Tab.tab_MDI>#extrabutton:mouseover, Tab.tab_MDI>#extrabutton:pushed,
+Tab.tab_MDI>#extrabutton:focused
+{
+	image				: URL('theme://TabFrame/tab_MDI_Extra.png');
+}
+Tab.tab_MDI>#extrabutton:disabled
+{
+	image				: URL('theme://TabFrame/tab_MDI_Extra.png');
+	opacity				: 50%;
+}
+

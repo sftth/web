@@ -1,0 +1,38 @@
+@charset "euc-kr";
+
+/* Declare web fonts :: LGFont, LGIcon */
+@font-face {
+    font-family:'LGSmHaL' ; font-style:normal; font-weight:200;
+    src: url('./font/LGSmHaL.eot');
+    src: url('./font/LGSmHaL.eot?#iefix') format('embedded-opentype'),
+    url('./font/LGSmHaL.woff') format('woff'),
+    url('./font/LGSmHaL.ttf') format('truetype');
+}
+@font-face {
+    font-family:'LGSmHaR'; font-style:normal; font-weight:400;
+    src: url('./font/LGSmHaR.eot');
+    src: url('./font/LGSmHaR.eot?#iefix') format('embedded-opentype'),
+    url('./font/LGSmHaR.woff') format('woff'),
+    url('./font/LGSmHaR.ttf') format('truetype');
+}
+@font-face {
+    font-family:'LGSmHaB'; font-style:normal; font-weight:600;
+    src: url('./font/LGSmHaB.eot');
+    src: url('./font/LGSmHaB.eot?#iefix') format('embedded-opentype'),
+    url('./font/LGSmHaB.woff') format('woff'),
+    url('./font/LGSmHaB.ttf') format('truetype');
+}
+@font-face {
+    font-family:'LGSmHaSB'; font-style:normal;
+    src: url('./font/LGSmHaSB.eot');
+    src: url('./font/LGSmHaSB.eot?#iefix') format('embedded-opentype'),
+    url('./font/LGSmHaSB.woff') format('woff'),
+    url('./font/LGSmHaSB.ttf') format('truetype');
+}
+@font-face {
+    font-family:'LGEIcons'; font-style:normal; font-weight:200;
+    src: url('./font/LGEIcons.eot');
+    src: url('./font/LGEIcons.eot?#iefix') format('embedded-opentype'),
+    url('./font/LGEIcons.woff') format('woff'),
+    url('./font/LGEIcons.ttf') format('truetype');
+}

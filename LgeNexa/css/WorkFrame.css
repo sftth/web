@@ -1,0 +1,835 @@
+﻿/************************************ B ************************************/
+Button.btn_WF_Popclose, Button.btn_WF_Popclose:mouseover, Button.btn_WF_Popclose:pushed,
+Button.btn_WF_Popclose:focused, Button.btn_WF_Popclose:selected, Button.btn_WF_Popclose:disabled
+{
+	background			: URL('theme://images/btn_WF_AlertClose.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	shadow				:;
+}
+/* btn_WFSA_Search */
+Button.btn_WFSA_Search, Button.btn_WFSA_Search:selected
+{
+	background			: #c00c3f;
+	border				: 0 none;
+	bordertype 			: nomal 0 0;
+	color				: #ffffff;
+	font				: antialias bold 9 LG스마트체,Arial;
+	image				: URL('theme://images/btn_WF_Search.png');
+	imagealign			: lefttext middle;
+	padding				: 0 0 0 4;
+	shadow 				: outer 0,1 1 #c3c4c8 ;
+}
+Button.btn_WFSA_Search:mouseover
+{
+	background			: #95012b;
+	border				: 1 solid #6c051a;
+	bordertype 			: nomal 0 0;
+	color				: #ffffff;
+	font				: antialias bold 9 LG스마트체,Arial;
+	image				: URL('theme://images/btn_WF_Search.png');
+	imagealign			: lefttext middle;
+	padding				: 0 0 0 4;
+	shadow 				: outer 0,1 1 #c3c4c8 ;
+}
+Button.btn_WFSA_Search:pushed, Button.btn_WFSA_Search:focused
+{
+	background			: #95012b;
+	border				: 1 solid #6c051a;
+	bordertype 			: nomal 0 0;
+	color				: #ffffff;
+	font				: antialias bold 9 LG스마트체,Arial;
+	image				: URL('theme://images/btn_WF_Search.png');
+	imagealign			: lefttext middle;
+	padding				: 0 0 0 4;
+	shadow 				: outer 0,1 1 #c3c4c8 ;
+}
+Button.btn_WFSA_Search:disabled
+{
+	background			: #8e8789;
+	border				: 0 none;
+	bordertype 			: nomal 0 0;
+	color				: #ffffff;
+	font				: antialias bold 9 LG스마트체,Arial;
+	image				: URL('theme://images/btn_WF_Search.png');
+	imagealign			: lefttext middle;
+	padding				: 0 0 0 4;
+	shadow 				: outer 0,1 1 #c3c4c8 ;
+}
+Button.btn_WF_Search
+{
+	background			: transparent;
+	border				: 0 none;
+	bordertype 			: nomal 0 0;
+	color				: transparent;
+	font				: antialias bold 9 LG스마트체,Arial;
+	image				: URL('theme://images/btn_WF_SearchSmall.png');
+	shadow                          :;
+}
+Button.btn_WF_Search:mouseover, Button.btn_WF_Search:pushed,
+Button.btn_WF_Search:focused
+{
+	background			: transparent;
+	border				: 0 none;
+	bordertype 			: nomal 0 0;
+	color				: transparent;
+	font				: antialias bold 9 LG스마트체,Arial;
+	image				: URL('theme://images/btn_WF_SearchSmall_M.png');
+	shadow                          :;
+}
+Button.btn_WF_Search:disabled
+{
+	background			: transparent;
+	border				: 0 none;
+	bordertype 			: nomal 0 0;
+	color				: transparent;
+	font				: antialias bold 9 LG스마트체,Arial;
+	image				: URL('theme://images/btn_WF_SearchSmall_D.png');
+	shadow                          :;
+}
+/* btn_WF_Grid */
+Button.btn_WF_Grid, Button.btn_WF_Grid:selected
+{
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #4f5670;
+	bordertype 		: nomal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: antialias 9 LG스마트체,Arial;
+	gradation		: linear 0,0 #71778c 0,100 #4f5670;
+	image			: ;
+	imagealign		: ;
+	letterspace		: ;
+	opacity			: ;
+	padding			: 0 0 0 0;
+	shadow 			: ;
+}
+Button.btn_WF_Grid:mouseover
+{
+	background		: @gradation;
+	border			: 1 solid #6c051a;
+	gradation		: linear 0,0 #a93355 0,100 #89143a;
+}
+Button.btn_WF_Grid:pushed,Button.btn_WF_Grid:focused
+{
+	background		: @gradation;
+	border			: 1 solid #6c051a;
+	gradation		: linear 0,0 #89143a 0,100 #a93355;
+}
+Button.btn_WF_Grid:disabled
+{
+	background		: @gradation;
+	border			: 1 solid #8e8789;
+	color			: #ffffff;
+	gradation		: linear 0,0 #b8b8b8 0,100 #97989d;
+}
+/* btn_WF_GridDown*/
+Button.btn_WF_GridDown, Button.btn_WF_GridDown:selected
+{
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #4f5670;
+	bordertype 		: nomal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: antialias 9 LG스마트체,Arial;
+	gradation		: linear 0,0 #71778c 0,100 #4f5670;
+	image			: URL('theme://images/btn_WF_Down.png');
+	imagealign		: lefttext middle;
+	letterspace		: ;
+	opacity			: ;
+	padding			: 0 0 0 0;
+	shadow 			: ;
+}
+Button.btn_WF_GridDown:mouseover
+{
+	background		: @gradation;
+	border			: 1 solid #6c051a;
+	gradation		: linear 0,0 #a93355 0,100 #89143a;
+}
+Button.btn_WF_GridDown:pushed,Button.btn_WF_GridDown:focused
+{
+	background		: @gradation;
+	border			: 1 solid #6c051a;
+	gradation		: linear 0,0 #89143a 0,100 #a93355;
+}
+Button.btn_WF_Grid:disabled
+{
+	background		: @gradation;
+	border			: 1 solid #8e8789;
+	color			: #ffffff;
+	gradation		: linear 0,0 #b8b8b8 0,100 #97989d;
+}
+/*Shuttle*/
+Button.btn_WF_ShuttleL
+{
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype 		: nomal 0 0;
+	color			: #333333;
+	cursor			: hand;
+	font			: antialias 9 LG스마트체,Arial;
+	gradation		: linear 0,0 #ffffff 0,100 #f7f7f7;
+	image			: URL('theme://images/btn_WF_ShuttleL.png') ;
+	imagealign		: ;
+	letterspace		: ;
+	opacity			: ;
+	padding			: 0 0 0 0;
+	shadow 			: ;
+}
+Button.btn_WF_ShuttleL:mouseover
+{
+	background		: @gradation;
+	border			: 1 solid #c00c3f;
+	gradation		: linear 0,0 #fefefe 0,100 #e0e0e0;
+}
+Button.btn_WF_ShuttleL:focused, Button.btn_WF_ShuttleL:pushed
+{
+	background		: @gradation;
+	border			: 1 solid #c00c3f;
+	gradation		: linear 0,0 #e0e0e0 0,100 #fefefe;
+}
+Button.btn_WF_ShuttleL:disabled
+{
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	color			: #a9a9a9;
+	gradation		: linear 0,0 #ffffff 0,100 #f7f7f7;
+	image			: URL('theme://images/btn_WF_ShuttleL_D.png') ;
+}
+Button.btn_WF_ShuttleR
+{
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype 		: nomal 0 0;
+	color			: #333333;
+	cursor			: hand;
+	font			: antialias 9 LG스마트체,Arial;
+	gradation		: linear 0,0 #ffffff 0,100 #f7f7f7;
+	image			: URL('theme://images/btn_WF_ShuttleR.png') ;
+	imagealign		: ;
+	letterspace		: ;
+	opacity			: ;
+	padding			: 0 0 0 0;
+	shadow 			: ;
+}
+Button.btn_WF_ShuttleR:mouseover
+{
+	background		: @gradation;
+	border			: 1 solid #c00c3f;
+	gradation		: linear 0,0 #fefefe 0,100 #e0e0e0;
+}
+Button.btn_WF_ShuttleR:focused, Button.btn_WF_ShuttleR:pushed
+{
+	background		: @gradation;
+	border			: 1 solid #c00c3f;
+	gradation		: linear 0,0 #e0e0e0 0,100 #fefefe;
+}
+
+Button.btn_WF_ShuttleR:disabled
+{
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	color			: #a9a9a9;
+	gradation		: linear 0,0 #ffffff 0,100 #f7f7f7;
+	image			: URL('theme://images/btn_WF_ShuttleR_D.png') ;
+}
+Button.btn_WF_PopupBtn
+{
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype 		: nomal 0 0;
+	color			: #333333;
+	cursor			: hand;
+	font			: antialias bold 9 LG스마트체,Arial;
+	gradation		: linear 0,0 #ffffff 0,100 #f7f7f7;
+	image			: ;
+	imagealign		: ;
+	letterspace		: ;
+	opacity			: ;
+	padding			: 0 0 0 0;
+	shadow 			: ;
+}
+Button.btn_WF_PopupBtn:mouseover
+{
+	background		: @gradation;
+	border			: 1 solid #c00c3f;
+	gradation		: linear 0,0 #fefefe 0,100 #e0e0e0;
+}
+Button.btn_WF_PopupBtn:pushed, Button.btn_WF_PopupBtn:focused
+{
+	background		: @gradation;
+	border			: 1 solid #c00c3f;
+	gradation		: linear 0,0 #e0e0e0 0,100 #fefefe;
+}
+Button.btn_WF_PopupBtn:disabled
+{
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	color			: #a9a9a9;
+	gradation		: linear 0,0 #ffffff 0,100 #f7f7f7;
+}
+/* btn_WF_GridSave */
+Button.btn_WF_GridSave
+{
+	background			: @gradation;
+	border				: 1 solid #a1a9a6ff;
+	color				: #4a4947ff;
+	font				: bold 9 Arial;
+	gradation			: linear 0,0 #ffffffff 0,100 #e1e3e2ff;
+}
+Button.btn_WF_GridSave:mouseover
+{
+	background			: #94243aff;
+	border				: 1 solid #780a20ff;
+	color				: #ffffffff;
+	font				: bold 9 Arial;
+}
+Button.btn_WF_GridSave:pushed
+{
+	background			: #94243aff;
+	border				: 1 solid #780a20ff;
+	color				: #ffffffff;
+	font				: bold 9 Arial;
+}
+Button.btn_WF_GridSave:disabled
+{
+	background			: #d9dadaff;
+	border				: 1 solid #b5bcb9ff;
+	color				: #838383ff;
+	font				: bold 9 Arial;
+}
+Button.btn_WFSA_Dell
+{
+	background			: URL('theme://WorkFrame/icon_WF_Dell_N.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+Button.btn_WFSA_Dell:mouseover, Button.btn_WFSA_Dell:pushed, Button.btn_WFSA_Dell:focused, Button.btn_WFSA_Dell:selected
+{
+	background			: URL('theme://WorkFrame/icon_WF_Dell_M.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+Button.btn_WFSA_Dell:disabled
+{
+	background			: URL('theme://WorkFrame/icon_WF_Dell_N.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	opacity				: 50;
+}
+/* btn_WFSA_Up */
+Button.btn_WFSA_Up
+{
+	background			: URL('theme://WorkFrame/icon_WFSA_UpN.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+Button.btn_WFSA_Up:mouseover, Button.btn_WFSA_Up:pushed, Button.btn_WFSA_Up:focused, Button.btn_WFSA_Up:selected
+{
+	background			: URL('theme://WorkFrame/icon_WFSA_UpM.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+Button.btn_WFSA_Up:disabled
+{
+	background			: URL('theme://WorkFrame/icon_WFSA_UpD.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+/* btn_WFSA_Down */
+Button.btn_WFSA_Down
+{
+	background			: URL('theme://WorkFrame/icon_WFSA_DownN.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+Button.btn_WFSA_Down:mouseover, Button.btn_WFSA_Down:pushed, Button.btn_WFSA_Down:focused, Button.btn_WFSA_Down:selected
+{
+	background			: URL('theme://WorkFrame/icon_WFSA_DownM.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+Button.btn_WFSA_Down:disabled
+{
+	background			: URL('theme://WorkFrame/icon_WFSA_DownD.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+/*
+
+Button.btn_WF_GridAdd
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridAddN.png');
+	border				: 1 solid #9d9d9dff;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_GridAdd:mouseover
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridAddM.png');
+	border				: 1 solid #9d9d9dff;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_GridAdd:pushed, Button.btn_WF_GridAdd:focused, Button.btn_WF_GridAdd:selected
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridAddP.png');
+	border				: 1 solid #707070ff;
+	bordertype			: normal 0 0;
+	padding				: 0;
+}
+Button.btn_WF_GridAdd:disabled
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridAddD.png');
+	border				: 1 solid #999999ff;
+	bordertype			: normal 0 0;
+}
+
+Button.btn_WF_GridDelete
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridDeleteN.png');
+	border				: 1 solid #9d9d9dff;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_GridDelete:mouseover
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridDeleteM.png');
+	border				: 1 solid #9d9d9dff;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_GridDelete:pushed, Button.btn_WF_GridDelete:focused, Button.btn_WF_GridDelete:selected
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridDeleteP.png');
+	border				: 1 solid #707070ff;
+	bordertype			: normal 0 0;
+	padding				: 0;
+}
+Button.btn_WF_GridDelete:disabled
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridDeleteD.png');
+	border				: 1 solid #999999ff;
+	bordertype			: normal 0 0;
+}
+
+Button.btn_WF_ExcelDown
+{
+	background			: URL('theme://WorkFrame/icon_WF_ExcelDownN.png');
+	border				: 1 solid #9d9d9dff;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_ExcelDown:mouseover
+{
+	background			: URL('theme://WorkFrame/icon_WF_ExcelDownM.png');
+	border				: 1 solid #9d9d9dff;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_ExcelDown:pushed, Button.btn_WF_ExcelDown:focused, Button.btn_WF_ExcelDown:selected
+{
+	background			: URL('theme://WorkFrame/icon_WF_ExcelDownP.png');
+	border				: 1 solid #707070ff;
+	bordertype			: normal 0 0;
+	padding				: 0;
+}
+Button.btn_WF_ExcelDown:disabled
+{
+	background			: URL('theme://WorkFrame/icon_WF_ExcelDownD.png');
+	border				: 1 solid #999999ff;
+	bordertype			: normal 0 0;
+}
+
+Button.btn_WF_ExcelUp
+{
+	background			: URL('theme://WorkFrame/icon_WF_ExcelUpN.png');
+	border				: 1 solid #9d9d9dff;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_ExcelUp:mouseover
+{
+	background			: URL('theme://WorkFrame/icon_WF_ExcelUpM.png');
+	border				: 1 solid #9d9d9dff;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_ExcelUp:pushed, Button.btn_WF_ExcelUp:focused, Button.btn_WF_ExcelUp:selected
+{
+	background			: URL('theme://WorkFrame/icon_WF_ExcelUpP.png');
+	border				: 1 solid #707070ff;
+	bordertype			: normal 0 0;
+	padding				: 0;
+}
+Button.btn_WF_ExcelUp:disabled
+{
+	background			: URL('theme://WorkFrame/icon_WF_ExcelUpD.png');
+	border				: 1 solid #999999ff;
+	bordertype			: normal 0 0;
+}
+
+Button.btn_WF_File
+{
+	background			: URL('theme://WorkFrame/icon_WF_FileN.png');
+	border				: 1 solid #a1a9a6ff;
+	bordertype			: round 2 2;
+}
+Button.btn_WF_File:mouseover
+{
+	background			: URL('theme://WorkFrame/icon_WF_FileM.png');
+	border				: 1 solid #780a20ff;
+	bordertype			: round 2 2;
+}
+Button.btn_WF_File:pushed, Button.btn_WF_File:focused, Button.btn_WF_File:selected
+{
+	background			: URL('theme://WorkFrame/icon_WF_FileP.png');
+	border				: 1 solid #780a20ff;
+	bordertype			: round 2 2;
+}
+Button.btn_WF_File:disabled
+{
+	background			: URL('theme://WorkFrame/icon_WF_FileD.png');
+	border				: 1 solid #b5bcb9ff;
+	bordertype			: round 2 2;
+}
+
+
+Button.btn_WF_GridSetting
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridSettingN.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_GridSetting:mouseover
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridSettingM.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_GridSetting:pushed, Button.btn_WF_GridSetting:focused, Button.btn_WF_GridSetting:selected
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridSettingM.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	padding				: 0;
+}
+Button.btn_WF_GridSetting:disabled
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridSettingD.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+
+Button.btn_WF_GridExpand
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridExpandN.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_GridExpand:mouseover
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridExpandM.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_GridExpand:pushed, Button.btn_WF_GridExpand:focused, Button.btn_WF_GridExpand:selected
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridExpandM.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	padding				: 0;
+}
+Button.btn_WF_GridExpand:disabled
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridExpandD.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+
+Button.btn_WF_GridReduce
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridReduceN.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_GridReduce:mouseover
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridReduceM.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+Button.btn_WF_GridReduce:pushed, Button.btn_WF_GridReduce:focused, Button.btn_WF_GridReduce:selected
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridReduceM.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	padding				: 0;
+}
+Button.btn_WF_GridReduce:disabled
+{
+	background			: URL('theme://WorkFrame/icon_WF_GridReduceD.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+*/
+/************************************ C ************************************/
+/* 나머지 Cell class는 GLAP.css에 기존 그대로 놔두고 추가된것만 적음 */
+
+
+
+/************************************ D ************************************/
+
+Div.div_WFSA_Bg
+{
+	background			: #ebecf0;
+	border				: 1 solid #b4b8c8;
+}
+
+/************************************ S ************************************/
+Static.sta_MF_ErrorImage ,Static.sta_MF_ErrorImage:mouseover,Static.sta_MF_ErrorImage:disabled
+{
+	background			: URL('theme://images/sta_MF_ErrorImage.png') center middle;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+
+Static.sta_MF_ErrorTitle , Static.sta_MF_ErrorTitle:mouseover,Static.sta_MF_ErrorTitle:disabled
+ {	
+	align				:center middle;
+	color				:#c5003d;
+	font				:35 Arial;
+}
+
+Static.sta_MF_ErrorGuide , Static.sta_MF_ErrorGuide:mouseover,Static.sta_MF_ErrorGuide:disabled
+ {	
+	align				:left middle;
+	color				:#333333;
+	font				:11 Arial;
+}
+
+Static.sta_MF_ErrorFollowings , Static.sta_MF_ErrorFollowings:mouseover,Static.sta_MF_ErrorFollowings:disabled
+ {	
+	align				:left middle;
+	color				:#333333;
+	font				:10 Arial;	
+	padding				: 0 0 0 0;
+}
+
+Static.sta_MF_ErrorFollowingsItem ,Static.sta_MF_ErrorFollowingsItem:mouseover,Static.sta_MF_ErrorFollowingsItem:disabled
+ {	align				: left middle;
+	background			: URL('theme://images/sta_MF_Bullet.png') 5 middle;
+	color				:#7d7d7d;
+	font				:9 Arial;
+	padding				: 0 0 2 40;
+}
+Static.sta_WF_AlertBg, Static.sta_WF_AlertBg:mouseover,
+Static.sta_WF_AlertBg:disabled
+{
+	background			: URL('theme://images/sta_WF_PopBg.png') stretch 20,50;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+
+Static.sta_WF_AlertIcon, Static.sta_WF_AlertIcon:mouseover,
+Static.sta_WF_AlertIcon:disabled
+{
+	background			: URL('theme://images/sta_WF_AlertIcon.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+
+Static.sta_WF_AlertTitle, Static.sta_WF_AlertTitle:mouseover,
+Static.sta_WF_AlertTitle:disabled
+{
+	background			: transparent;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	font				: 9 Arial bold;
+	color				: #ffffff;
+}
+
+Static.sta_WF_ConfirmBg, Static.sta_WF_ConfirmBg:mouseover,
+Static.sta_WF_ConfirmBg:disabled
+{
+	background			: URL('theme://images/sta_WF_PopBg.png') stretch 20,50;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+
+Static.sta_WF_ConfirmIcon, Static.sta_WF_ConfirmIcon:mouseover,
+Static.sta_WF_ConfirmIcon:disabled
+{
+	background			: URL('theme://images/sta_WF_ConfirmIcon.png') stretch 20,50;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+
+Static.sta_WF_ErrorBg, Static.sta_WF_ErrorBg:mouseover,
+Static.sta_WF_ErrorBg:disabled
+{
+	background			: URL('theme://images/sta_WF_PopBg.png') stretch 20,50;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+
+Static.sta_WF_ErrorIcon, Static.sta_WF_ErrorIcon:mouseover,
+Static.sta_WF_ErrorIcon:disabled
+{
+	background			: URL('theme://images/sta_WF_ErrorIcon.png');
+	border				: 0 none;
+	bordertype			: normal 0 0;
+}
+
+/* sta_WFSA_Label */
+Static.sta_WFSA_Label
+{
+	background			: URL('theme://WorkFrame/icon_WF_Search_N.png') left middle;
+	align				: left middle;
+	color				: #333333;
+	font				: antialias bold 9 LG스마트체,Arial;
+	padding				: 0 0 0 10;
+}
+Static.sta_WFSA_Label_E
+{
+	background			: URL('theme://WorkFrame/icon_WF_Search_E.png') left middle;
+	align				: left middle;
+	color				: #333333;
+	font				: antialias bold 9 LG스마트체,Arial;
+	padding				: 0 0 0 10;
+}
+/* sta_WFDA_Label */
+Static.sta_WFDA_Label
+{
+	background			: #f3f4f8;
+	border				: 1 solid #b2b5bf;
+	color				: #333333;
+	font				: antialias bold 9 LG스마트체,Arial;
+	padding				: 0 8 0 14;
+}
+Static.sta_WFDA_Label_E
+{
+	background			: #f3f4f8 URL('theme://WorkFrame/icon_WF_Label_E.png') left middle;
+	border				: 1 solid #b2b5bf;
+	color				: #333333;
+	font				: antialias bold 9 LG스마트체,Arial;
+	padding				: 0 8 0 14;
+}
+/* sta_WFDA_Data */
+Static.sta_WFDA_Data
+{
+	background			: #ffffff;
+	border				: 1 solid #b2b5bf;
+	padding				: 0 8 0 10;
+}
+/* sta_WFDA_LabelCenter */
+Static.sta_WFDA_LabelCenter
+{
+	align				: center middle;
+	background			: #f3f4f8;
+	border				: 1 solid #b2b5bf;
+	font				: antialias bold 9 LG스마트체,Arial;
+	padding				: 0 8 0 14;
+}
+/* sta_WFDA_LabelTitle */
+Static.sta_WFDA_LabelTitle
+{
+	align				: center middle;
+	background			: #f3f4f8;
+	border				: 1 solid #b2b5bf;
+	font				: antialias bold 9 LG스마트체,Arial;
+	padding				: 0 8 0 14;
+}
+/* sta_WF_Unit */
+Static.sta_WF_Unit
+{
+	align				: center middle;
+}
+/* sta_WF_Title */
+Static.sta_WF_Title
+{
+	background			: URL('theme://WorkFrame/icon_WF_Title.png') left middle;
+	color				: #c00c3f;
+	font				: antialias bold 10 LG스마트체,Arial;
+	padding				: 0 0 0 15;
+}
+/* sta_WF_SubTitle */
+Static.sta_WF_SubTitle
+{
+	background			: URL('theme://WorkFrame/icon_WF_SubTitle.png') left middle;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	color				: #525972;
+	font				: antialias bold 9 LG스마트체,Arial;
+	padding				: 0 0 0 12;
+	align				: left middle;
+}
+/* sta_WF_Sub */
+Static.sta_WF_Sub
+{
+	background			: ;
+	color				: #8b0027;
+	font				: antialias 9 LG스마트체,Arial;
+	padding				: 0 0 0 0;
+	linespace                       : 3
+}
+/* sta_WF_Link */
+Static.sta_WF_Link
+{
+	font				: antialias underline 9 LG스마트체,Ariale;
+	color				: #c00c3f;	
+}
+/* sta_WF_GridTxt */
+Static.sta_WF_GridTxt
+{
+	align				: right middle;
+	color				: #383f43ff;
+}
+/* sta_WF_GridTotal */
+Static.sta_WF_GridTotal
+{
+	align				: right middle;
+	background			: #ebecf1;
+	border				: 1 solid #dcdde2, 1 solid #cccccc, 1 solid #a2a8ba, 1 solid #cccccc;
+	font				: antialias bold 9 LG스마트체,Arial;
+	padding				: 0 5 0 5;
+}
+
+/***************************************************************************/
+/****************************    Guide Class	****************************/
+/***************************************************************************/
+
+Static.Pseudo
+{
+	font				: 8 Arial;
+	color				: #615b5b;
+}
+Static.Guide_Line
+{
+	background			: #cccccc;
+}
+Static.Guide_Color
+{
+	background			: #ff9197;
+	align				: center middle;
+	opacity				: 70;
+}
+Static.Guide_header
+{
+	background			: #000000;
+	color				: #ffffffff;
+	font				: bold 10 Arial;
+	padding				: 0 0 0 15;
+}
+Static.Guide_Title
+{
+	font				: bold 10 Arial;
+	padding				: 0 0 0 10;
+}
+Static.Guide_Number
+{
+	font				: 8 Arial;
+	color				: #d2020b;
+}
+Static.Guide_Class
+{
+	font				: 8 Arial;
+	color				: #d2020b;
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import url(./LGE.css);
+
+body{
+     font-family:'LGSmHaL', 'LGSmHaR','LGSmHaB','LGSmHaSB','LGEIcons' ;
+     font-size:12px ;
+     color:#333;
+     margin:0;
+    padding:0;
+}
+div {font-family:'LGSmHaL', 'LGSmHaR','LGSmHaB','LGSmHaSB','LGEIcons' !important;}

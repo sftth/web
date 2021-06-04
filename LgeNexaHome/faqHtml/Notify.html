@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Multiple File Upload</title>
+    
+    <script type="text/javascript">	
+	if (! window.NEXACROHTML) {
+		window.NEXACROHTML = {};
+	}
+	
+	var parentNexacro = null;
+    var bInit = false;
+    window.NEXACROHTML.Init = function(str) {
+
+        var loopCnt = 0;
+        var interval = setInterval(function() {            
+            parentNexacro = window.NEXACROWEBBROWSER;
+            //console.log("ParparentNexacroent:" + loopCnt + ":" + parentNexacro);      
+        if(loopCnt >= 10 || parentNexacro) {
+            bInit = true;
+            clearInterval(interval);
+            window.NEXACROHTML.FireUserNotify(str);
+          }
+            loopCnt++;
+        }, 10);
+    }
+	
+	window.NEXACROHTML.FireUserNotify = function(userdata) {
+		
+		//alert("웹 페이지 = > " + userdata);		
+		if (window.NEXACROWEBBROWSER) {
+			  window.NEXACROWEBBROWSER.on_fire_onusernotify(window.NEXACROWEBBROWSER, userdata);
+		} else {			
+				
+			  window.document.title = userdata;
+			  
+		  }			
+	}
+    function asdf()
+    {
+    	window.NEXACROHTML.FireUserNotify("load");
+    	
+    }
+    
+	function test1()
+	{
+		window.NEXACROHTML.Init("init");
+		
+		
+	}
+	
+	function test2()
+	{
+		
+		window.NEXACROHTML.FireUserNotify("test2 function");
+		
+	}
+    
+    
+    </script>
+</head>
+</html>

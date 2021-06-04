@@ -1,0 +1,20 @@
+﻿{
+	"name": "BaseLibrary",
+	"version": "1.0.0.0",
+	"description": "Base Library for nexacro platform",
+	"license": "",
+	"scripts": [
+        "BaseLibrary/Namespace.js",
+	"BaseLibrary/Base.js",
+	"BaseLibrary/Event.js",
+	"BaseLibrary/Namespace.js",
+	"BaseLibrary/PositionSize.js",
+	"BaseLibrary/Style.js",
+	"BaseLibrary/XComp.js",
+	"BaseLibrary/array.js",
+	"BaseLibrary/date.js",
+	"BaseLibrary/object.js",
+        "BaseLibrary/string.js"
+	]
+}
+//@ sourceURL=BaseLibrary.json

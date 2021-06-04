@@ -1,0 +1,47 @@
+﻿Button.WF_btn_page,
+Button.WF_btn_page:mouseover,
+Button.WF_btn_page:pushed,
+Button.WF_btn_page:focused,
+Button.WF_btn_page:selected
+{
+	background			: transparent;
+	border				: 0 none;
+	color				: #333333ff;
+	font				: antialias 9 LG스마트체 SemiBold,Malgun Gothic;
+}
+Button.WF_btn_page:disabled
+{
+	background			: transparent;
+	border				: 0 none;
+	color				: #ab0033ff;
+	font				: antialias underline 9 LG스마트체 SemiBold,Malgun Gothic;
+}
+
+Button.WF_btn_page_first,
+Button.WF_btn_page_first:mouseover,
+Button.WF_btn_page_first:pushed,
+Button.WF_btn_page_first:focused,
+Button.WF_btn_page_first:selected
+{
+	background			: #ffffffff;
+	border				: 1 solid #a9a9a9ff;
+	image				: URL('theme://Paging/icon_Paging_First.png');
+}
+Button.WF_btn_page_prev
+{
+	background			: #ffffffff;
+	border				: 1 solid #a9a9a9ff;
+	image				: URL('theme://Paging/icon_Paging_Prev.png');
+}
+Button.WF_btn_page_next
+{
+	background			: #ffffffff;
+	border				: 1 solid #a9a9a9ff;
+	image				: URL('theme://Paging/icon_Paging_Next.png');
+}
+Button.WF_btn_page_last
+{
+	background			: #ffffffff;
+	border				: 1 solid #a9a9a9ff;
+	image				: URL('theme://Paging/icon_Paging_Last.png');
+}

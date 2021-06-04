@@ -1,0 +1,20 @@
+﻿{
+	"name": "JSLib",
+	"version": "15.0.0.1",
+	"description":	"LgeLibrary for nexacro",
+	"license": "",
+	"scripts": [
+		"LgeLibrary/Base.js",
+		"LgeLibrary/Filter.js",
+		"LgeLibrary/Biz.js",
+		"LgeLibrary/Core.js",
+		"LgeLibrary/Util.js",
+		"LgeLibrary/Ui.js",
+		"LgeLibrary/Date.js",
+		"LgeLibrary/Valid.js",
+		"LgeLibrary/Grid.js"
+
+	]
+}
+//@ sourceURL=JSLib.json
+

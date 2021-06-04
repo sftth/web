@@ -1,0 +1,154 @@
+﻿/************************************ B ************************************/
+
+/* btn_TF_User */
+Button.btn_TF_User, Button.btn_TF_User:focused, Button.btn_TF_User:selected, Button.btn_TF_User:mouseover, Button.btn_TF_User:pushed, Button.btn_TF_User:disabled
+{
+	background			: URL('theme://TopFrame/icon_TF_UserN.png') left middle;
+	border				: 0 none;
+}
+/* btn_TF_Logout */
+Button.btn_TF_Logout
+{
+	background			: #000000 URL('theme://TopFrame/icon_TF_LogoutN.png') center middle;
+	border				: 0 none;
+}
+Button.btn_TF_Logout:mouseover, Button.btn_TF_Logout:pushed, Button.btn_TF_Logout:focused, Button.btn_TF_Logout:selected
+{
+	background			: #000000 URL('theme://TopFrame/icon_TF_LogoutM.png') center middle;
+	border				: 0 none;
+}
+Button.btn_TF_Logout:disabled
+{
+	background			: #000000 URL('theme://TopFrame/icon_TF_LogoutM.png') center middle;
+	border				: 0 none;
+	opacity				: 50%;
+}
+
+
+/************************************ F ************************************/
+
+Form.frm_TF
+{
+	background			: ;
+}
+/********************************P***********************************/
+
+PopupDiv.pop_TF, 
+PopupDiv.pop_TF:mouseover,
+PopupDiv.pop_TF:focused,
+PopupDiv.pop_TF:disabled
+{
+	background			: transparent URL('theme://TopFrame/pop_TF_Bg.png') stretch 20,20;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	color				: #ffffff;
+	cursor				: ;
+	font				: antialias 9 LG스마트체,Arial;
+	gradation			: ;
+	opacity				: ;
+	padding				: 10 10 10 10;
+	shadow				: ;
+	stepalign			: ;
+}
+
+
+/************************************ M ************************************/
+
+Menu.mnu_TF
+{
+	background			: #333333;
+	itembackground			: transparent;
+	expandimage			: URL('theme://TopFrame/icon_TF_MenuExpand.png'); 
+	font				: antialias bold 14 LG스마트체,Arial ;
+	itempadding			: 0 20 0 20;
+	popupbackground			: #ffffff;
+	popupborder			: 1 solid #c00c3f;
+	popupfont			: bold 10 LG스마트체,Arial;
+	popupitembackground		: transparet;
+	popupitemborder			: 0 none;
+	popupitemheight			: 30;
+	popupitempadding		: 0 10 0 13;
+	popuppadding			: 0 0 0 0;
+}
+Menu.mnu_TF:mouseover, Menu.mnu_TF:pushed,
+Menu.mnu_TF:focused, Menu.mnu_TF:selected
+{
+	background			: transparent;	
+	itembackground			: #c00c3f;
+	expandimage			: URL('theme://TopFrame/icon_TF_MenuExpand.png'); 
+	itempadding			: 0 20 0 20;
+	color				: #ffffffff;
+	font				: antialias bold 14 LG스마트체,Arial;
+	popupitembackground		: #333333;
+	popupcolor			: #ffffff;
+	popupfont			: bold 10 LG스마트체,Arial Narrow;
+	popupitemheight			: 30;
+	popupitempadding		: 0 10 0 13;
+	popuppadding			: 0 0 0 0;
+}
+Menu.mnu_TF:disabled
+{
+	background			: transparent;	
+	font				: antialias bold 13 LG스마트체,Arial;
+	popupcolor			: #999999ff;
+	popupitempadding		: 0 10 0 13;
+	popuppadding			: 0 0 0 0;
+	opacity				: 50%;
+}
+
+/************************************ S ************************************/
+Static.sta_TF_Title
+{
+	align				: left middle;
+	background			: transparent;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	color				: #ffffff;
+	font				: antialias bold 18 LG스마트체,Arial;
+}
+Static.sta_TF_Logo
+{
+	background			: URL('theme://TopFrame/lglogo.png') left middle;
+}
+Static.sta_TF_Name
+{
+	align				: left middle;
+	background			: transparent;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	color				: #ffffff;
+	font				: antialias 9 LG스마트체,Arial;
+}
+Static.sta_TF_Department
+{
+	align				: left middle;
+	background			: transparent;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	color				: #909090;
+	font				: antialias 9 LG스마트체,Arial;
+}
+/* TextArea */
+TextArea.txt_TF, TextArea.txt_TF:mouseover,
+TextArea.txt_TF:focused
+{
+	align				: left top;
+	background			: transparent;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	color				: #ffffff;
+	cursor				: ;
+	font				: antialias 9 LG스마트체,Arial;
+	gradation			: ;
+	linespace			: 4;
+	opacity				: ;
+	padding				: 0 0 0 0;
+	selectbackground		: #333333;
+	selectcolor			: #ffffff;	
+}
+TextArea.txt_TF:disabled
+{
+	background			: transparent;
+	border				: 0 none;
+	color				: #ffffff;
+}

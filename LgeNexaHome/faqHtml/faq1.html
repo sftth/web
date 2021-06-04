@@ -1,0 +1,52 @@
+<html>
+<head>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<style title="__xfree_default">
+html { cursor: text; }
+p {margin-top: 0pt; margin-bottom: 0pt; }
+ol, li, ul {margin-top: 3pt; margin-bottom: 3pt; }
+td { /* word-break: break-all;*/}
+blockquote { margin-top: 0pt; margin-bottom: 0pt }
+</style></head><body style="font-family: 굴림; font-size: 9pt;" ><p style="font-family: 굴림; font-size: 9pt;">​</p>
+<div class="r_heading_inner"><span class="heading2_n"><span style="font-size: 16pt;"><strong><span style="font-family: 맑은 고딕;">1)&nbsp;&nbsp;Cache Level</span></strong></span></span></div>
+<div class="r_heading_inner"><span class="heading2_n"><span>​</span></span>&nbsp;</div>
+<div class="r_heading_inner"><ol class="element ordered_list" data-id="a76b09bf2dc005a4"><li><p>Cache Level은 개발 툴(type definition)에서 설정이 없다면 기본이 “dynamic”입니다.</p>
+<li><p>개발중에는 많은 수정이 이뤄지므로 “dynamic”이 적절할 수 있으나 사용자 테스트용 서버등에는 “session”으로 설정하여 운영 전 최종모습으로 테스트할 수 있도록 합니다. 간혹, 업무화면에 따라, 시점을 고려치 않고 작업이 되어 “session”으로 변경 후 오동작 현상이 있을 수 있으므로 사전에 확인이 될 수도 있습니다.</p>
+<li><p>최종 운영서버에는 가급적 화면 및 공통 함수, 이미지 영역은 “session”으로 지정하도록 합니다.</p>
+<li><p>화면별 다수의 공통함수를 include하는 방식은 비권장사항이나, 화면별 공통함수를 include한다면 해당 공통함수는 성능에 많은 영향을 끼치므로 "session" cache를 사용하여야 합니다.</p>
+</li></ol><pre class="element pre" data-id="48721ebf8be15acf"> <img width="453" height="130" src="http://docs.tobesoft.com/r/book_image/inline/48721ebf8be15acf_14ab704711f57627"> </pre><pre class="element pre" data-id="48721ebf8be15acf">- 설정하지 않을 경우 cachelevel은 "dynamic"임을 인지 하셔야 합니다.</pre><div class="element tip" data-id="de6e7e2f1864db09">데이터 통신을 위한 서비스용 URL은 반드시 "none"으로 설정하셔야 합니다.</div>
+<div class="element tip" data-id="de6e7e2f1864db09">Static Cache는 런타임에서만 사용 가능하며, 해외와 같이 네트워크 상황이 좋지 못한 경우 유용할 수 있습니다. 다만, Static Cache는 버전 관리를 수작업으로 하기에 관리비용이 증가됩니다.</div>
+<div class="element tip" data-id="cd24c27a65350922">&nbsp;</div>
+<div class="element tip" data-id="cd24c27a65350922">&nbsp;</div>
+<div class="element tip" data-id="cd24c27a65350922">&nbsp;</div>
+<div class="element tip" data-id="cd24c27a65350922">&nbsp;</div>
+<div class="element tip" data-id="cd24c27a65350922"><strong><span style="font-family: 맑은 고딕; font-size: 16pt;">2) JS Merge, Compress</span></strong></div>
+<div class="element tip" data-id="cd24c27a65350922">&nbsp;</div>
+<div class="element tip" data-id="cd24c27a65350922"><ol class="element ordered_list" data-id="ed326bcfeeffb4ad"><li><p>최초 접속 후 다운로드시 nexacro platform의 java-script framework을 merge를 하지 않을 경우 네트워크 상황에 따라 초기 로딩시간이 소요됩니다.</p>
+<li><p>Merge를 하므로 인하여 파일 사이즈를 줄일 수 있고, 요청 파일 수가 감소하므로 네트워크 비용을 감소 시킬 수 있습니다.</p>
+<li><p>운영시 nexacro platform의 java-script framework은 필수적으로 하여야 하며, 업무소스 또한 가급적 권장합니다.</p>
+</li></ol><h2 class="element heading2" style="opacity: 1;" data-id="c5903d206088cc0d"><div class="breadcrumb"><span style="font-family:; font-size: 9pt;">■ 개발툴 &gt; 메뉴 &gt; Build &gt; Deploy &gt; Deploy Module<br></span>&nbsp; <img width="584" height="243" src="http://docs.tobesoft.com/r/book_image/inline/b63c0b4b537af95b_962362398ff44a13"></div>
+</h2><pre class="element pre" data-id="46d1ab09bd6a862a"><br></pre><pre class="element pre" data-id="46d1ab09bd6a862a"><strong>■ De</strong><strong>ploy될 디렉토리 선</strong><strong>택 및 merge JSON , Compress JS file 체크</strong>&nbsp; </pre><pre class="element pre" data-id="46d1ab09bd6a862a"><img width="538" height="385" src="http://docs.tobesoft.com/r/book_image/inline/46d1ab09bd6a862a_fe0f81d2543ab483">&nbsp;</pre><pre class="element pre" data-id="46d1ab09bd6a862a">&nbsp;</pre><pre class="element pre" data-id="46d1ab09bd6a862a"><span style="font-family: 맑은 고딕; font-size: 16pt;"><strong>3) 화면 갯수 제한</strong></span> </pre><pre class="element pre" data-id="46d1ab09bd6a862a"><ol class="element ordered_list" data-id="5ab89e4a2972c205"><li><p>어플리케이션은 한계 메모리가 있으며, 한계 메모리를 초과하거나 유후 메모리가 없는 경우 비정상종료가 발생되거나, 이상동작이 발생됩니다.</p>
+</li><li><p>화면 구성에 따라 메모리 사용량을 다르겠지만 최대로 오픈할 수 있는 화면(MDI), 오픈창등의 갯수를 제한하도록 구성합니다.</p>
+</li></ol></pre><p><span style="font-family: Courier New;">&nbsp;</span></p>
+<p><span style="font-family: Courier New; font-size: 16pt;"><strong><span style="font-family: 맑은 고딕;">4) 최초 로딩 페이지 단순화</span></strong> </span></p>
+<ol class="element ordered_list" data-id="20fa5dcc0b90bda2"><li><p>최초로 로딩되고 보여지는 페이지는 가급적 단순화하여 구성합니다.</p>
+</li><li><p>메인페이지에 많은 수의 데이터셋과 링크된 페이지,많은 include등으로 구성하게 되면 이로 인한 로딩 시간이 길어 지므로, 분할처리 하도록 구성합니다.</p>
+</li></ol><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-family: 맑은 고딕; font-size: 16pt;"><strong>5) 디자인 처리(IE9) </strong></span></p>
+<ol class="element ordered_list" data-id="79546c8291e45c0b"><li><p>IE9이하에서 CSS를 처리 할 때 bordertype을 round로 설정시 성능에 영향을 줄 수 있으므로 round처리는 최소화 하도록 합니다.</p>
+</li><li><p>IE9이하에서 CSS를 처리 할 때 Alpah값을 처리할 경우 성능에 영향을 줄 수 있으므로 가급적 사용을 제한 합니다. 예) #11111111 =&gt; #111111ff</p>
+</li></ol><p>&nbsp;</p>
+<p>&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-family: 맑은 고딕; font-size: 16pt;"><strong>6) 스타일 최적화 </strong></span></p>
+<ol class="element ordered_list" data-id="1950aa3a2b61114e"><li><p>많은 이미지와 다양한 스타일을 적용하게 되면, 응답시간 및 렌더링등의 영향을 받습니다.</p>
+</li><li><p>이미지는 손실률이 없고 높은 압축률을 보이는 png 형태를 권장합니다.</p>
+</li><li><p>성능을 고려한다면 페이지에 구성되는 이미지는 최소화 하도록 하며, 컴퍼넌트의 스타일로 구성이 가능하다면 이로 대체하도록 합니다.</p>
+</li><li><p>컴퍼넌트 또한 다양한 스타일로 구성할 수 있으나 이러한 스타일이 복잡할 수록 렌러링에는 영향을 받으므로 주의하여야 합니다. (예시 9-1)</p>
+</li></ol><pre class="element pre" data-id="6848e546858f7e81"> <img width="466" height="332" src="http://docs.tobesoft.com/r/book_image/inline/6848e546858f7e81_8186af0a85e2c04c"> </pre><pre class="element pre" data-id="6848e546858f7e81">- 상단 이미지는 기본 형태이나 하단 이미지는 그리드의 edittype과 padding이 적용된 경우입니다. 하단의 그리드를 HTML 형태로 만들기 위해서는 더 많은 node가 필요할 것입니다.</pre><p>&nbsp;</p>
+<pre class="element pre" data-id="46d1ab09bd6a862a">&nbsp;</pre><p class="element normal" data-id="37f36707f67b571e">&nbsp;</p>
+</div>
+</div>
+</body></html>

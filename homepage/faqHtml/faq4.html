@@ -1,0 +1,139 @@
+<html>
+<head><style title="__xfree_default">
+html { cursor: text; }
+p {margin-top: 0pt; margin-bottom: 0pt; }
+ol, li, ul {margin-top: 3pt; margin-bottom: 3pt; }
+td { /* word-break: break-all;*/}
+blockquote { margin-top: 0pt; margin-bottom: 0pt }
+</style></head><body style="font-family: 굴림; font-size: 9pt;" ><p style="font-family: 굴림; font-size: 9pt;">​<span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 28pt; language: ko;">넥사크로</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 28pt; language: ko;"> 패키지 다국어처리 가이드</span></p>
+<p style="font-family: 굴림; font-size: 9pt;">&nbsp;</p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">1. </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: ko;">기준언어 결정</span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: ko;">​</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">&nbsp;</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">- </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">화면 </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">개발시에</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;"> 사용할 기준언어 결정</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;"></span></p>
+<p style="text-align: justify; text-indent: 0in; margin-top: 3.84pt; margin-bottom: 0pt; margin-left: 0in; unicode-bidi: embed; direction: ltr; language: ko; punctuation-wrap: hanging;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">&nbsp;&nbsp;&nbsp; 화면개발을 한글</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">, </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">영문 또는 기타언어로 할 것인지를 결정한다</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">.</span></p>
+<p style="text-align: justify; text-indent: 0in; margin-top: 3.84pt; margin-bottom: 0pt; margin-left: 0in; unicode-bidi: embed; direction: ltr; language: ko; punctuation-wrap: hanging;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">&nbsp;</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">- </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">다국어 </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">치환시에는</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;"> 기준언어는 치환하지 않는다</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">.</span></p>
+<p style="text-align: justify; text-indent: 0in; margin-top: 3.84pt; margin-bottom: 0pt; margin-left: 0in; unicode-bidi: embed; direction: ltr; language: ko; punctuation-wrap: hanging;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">&nbsp;&nbsp;&nbsp; Default : </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">한글</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">(KR)</span></p>
+<p style="text-align: justify; text-indent: 0in; margin-top: 3.84pt; margin-bottom: 0pt; margin-left: 0in; unicode-bidi: embed; direction: ltr; language: ko; punctuation-wrap: hanging;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">&nbsp;- </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">기준언어가 변경되면 </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">Comm.xjs</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">에서 아래 설정을 변경한다</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">.</span></p>
+<p style="font-family: 굴림; font-size: 9pt;">&nbsp;</p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: ko;">​<img alt="IMG_105534.png" src="http://localhost:8080/tagfree//upload/20171031/IMG_105534.png"></span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: ko;">​</span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: ko;">​</span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">2. </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: ko;">선택한 언어 데이터 확보</span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: ko;"></span></p>
+<p style="text-align: justify; text-indent: 0in; margin-top: 3.84pt; margin-bottom: 0pt; margin-left: 0in; unicode-bidi: embed; direction: ltr; language: ko; punctuation-wrap: hanging;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">로그인시 선택한 언어코드에 맞추어 단어 및 메시지 데이터를 확보한다</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">.</span></p>
+<p style="text-align: justify; text-indent: 0in; margin-top: 3.84pt; margin-bottom: 0pt; margin-left: 0in; unicode-bidi: embed; direction: ltr; language: ko; punctuation-wrap: hanging;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">1. </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">gds_language</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;"> : </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">단어 처리용 </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">Dataset</span></p>
+<p style="text-align: justify; text-indent: 0in; margin-top: 3.84pt; margin-bottom: 0pt; margin-left: 0in; unicode-bidi: embed; direction: ltr; language: ko; punctuation-wrap: hanging;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">2. </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">gds_message</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;"> : </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">메시지 처리용 </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">Dataset</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;"> </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;"></span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: ko;">​<img alt="IMG_105620.png" src="http://localhost:8080/tagfree//upload/20171031/IMG_105620.png"></span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: ko;">​</span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: ko;">​</span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">3. </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">gds_language</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;"> Layout</span></p>
+<table style="padding: 0px; border: 1px rgb(0, 0, 0); border-image: none; width: 726px; height: 81px; font-size: 9pt; border-collapse: collapse; background-color: rgb(255, 255, 255);" border="1" cellspacing="0" cellpadding="0"><tbody><tr><td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;"><span style="color: rgb(0, 51, 0);">&nbsp;Columns</span></p>
+</td>
+<td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;"><span style="color: rgb(0, 51, 0);">&nbsp;</span><span style="color: rgb(0, 51, 0);">Description</span></p>
+</td>
+</tr>
+<tr><td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;"><span style="color: rgb(0, 51, 0);">&nbsp;</span>WORD_CD</p>
+</td>
+<td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;단어코드</p>
+</td>
+</tr>
+<tr><td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;WORD_TRAN</p>
+</td>
+<td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;치환될 단어</p>
+</td>
+</tr>
+<tr><td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;LANG_CD</p>
+</td>
+<td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;언어코드</p>
+</td>
+</tr>
+</tbody></table>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;"></span></p>
+<p>&nbsp;</p>
+<p><span tabindex="0">사용예)</span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span tabindex="0"></span></p>
+<table id="xfe_tbl_tmpid" style="padding: 0px; border: 1px rgb(0, 0, 0); border-image: none; width: 726px; font-size: 9pt; border-collapse: collapse; background-color: rgb(255, 255, 255);" border="1" cellspacing="0" cellpadding="0"><tbody><tr><td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;"><span style="color: rgb(0, 51, 0);">&nbsp;</span>WORD_CD&nbsp;</p>
+</td>
+<td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;WORD_TRAN&nbsp;</p>
+</td>
+<td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;LANG_CD&nbsp;</p>
+</td>
+</tr>
+<tr><td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;저장</p>
+</td>
+<td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">Save</p>
+</td>
+<td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;EN</p>
+</td>
+</tr>
+<tr><td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;조회</p>
+</td>
+<td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">Search</p>
+</td>
+<td style="padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;EN</p>
+</td>
+</tr>
+</tbody></table>
+<p style="font-family: 굴림; font-size: 9pt;"><span tabindex="0">​</span><span tabindex="0">​</span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">​</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">기준언어가</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">(</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">화면에서 사용한 언어</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">)</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;"> 한글일 경우 </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">WORD_CD</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">는 한글이 될 수도 있다</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: en-US;">.</span></p>
+ <p style="text-align: justify; text-indent: 0in; margin-top: 3.84pt; margin-bottom: 0pt; margin-left: 0in; unicode-bidi: embed; direction: ltr; language: ko; punctuation-wrap: hanging;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-weight: bold; language: ko;">&nbsp;</span></p>
+ <p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;"></span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">​</span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">​</span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">​<span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">3. </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">gds_message</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;"> Layout</span></span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;"></span></span></p>
+<table id="xfe_tbl_tmpid" style="border: 1px rgb(0, 0, 0); border-image: none; width: 726px; height: 81px; font-size: 9pt; border-collapse: collapse; background-color: rgb(255, 255, 255);" border="1" cellspacing="0" cellpadding="0"><tbody><tr><td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;"><span style="color: rgb(0, 51, 0);">&nbsp;Columns</span></p>
+</td>
+<td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;"><span style="color: rgb(0, 51, 0);">&nbsp;</span><span style="color: rgb(0, 51, 0);">Description</span></p>
+</td>
+</tr>
+<tr><td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;"><span style="color: rgb(0, 51, 0);">&nbsp;MSG</span>_CD</p>
+</td>
+<td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;메세지 코드</p>
+</td>
+</tr>
+<tr><td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;MSG_TRAN</p>
+</td>
+<td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;치환될 단어</p>
+</td>
+</tr>
+<tr><td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;LANG_CD</p>
+</td>
+<td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 363px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;언어코드</p>
+</td>
+</tr>
+</tbody></table>
+<p style="font-family: 굴림; font-size: 9pt;">&nbsp;</p>
+<span tabindex="0" id="xfe_tmp_caret"></span><p><span tabindex="0">사용예)</span></p>
+<table id="xfe_tbl_tmpid" style="border: 1px rgb(0, 0, 0); border-image: none; width: 726px; font-size: 9pt; border-collapse: collapse; background-color: rgb(255, 255, 255);" border="1" cellspacing="0" cellpadding="0"><tbody><tr><td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;"><span style="color: rgb(0, 51, 0);">&nbsp;MSG</span>_CD&nbsp;</p>
+</td>
+<td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;MSG_TRAN&nbsp;</p>
+</td>
+<td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;LANG_CD&nbsp;</p>
+</td>
+</tr>
+<tr><td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">MSG0001</p>
+</td>
+<td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">저장되었습니다.</p>
+</td>
+<td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;KR</p>
+</td>
+</tr>
+<tr><td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">MSG0002</p>
+</td>
+<td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">삭제되었습니다.</p>
+</td>
+<td style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 242px; height: 20px;"><p style="font-family: 굴림; font-size: 9pt;">&nbsp;KR</p>
+</td>
+</tr>
+</tbody></table>
+<p style="font-family: 굴림; font-size: 9pt;">&nbsp;</p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;"></span></span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">​</span></span></p>
+<p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">​<span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;">4. </span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: ko;">적용방법</span></span></span></p>
+ <p style="text-align: justify; margin-top: 3.36pt; margin-bottom: 0pt; margin-left: 0in; unicode-bidi: embed; direction: ltr; language: ko; punctuation-wrap: hanging;"><span style="color: black; text-transform: none; letter-spacing: 0pt; font-family: 'LG스마트체 Regular'; font-size: 14pt; font-style: normal; font-variant: normal; font-weight: bold; vertical-align: baseline; language: en-US;">Form</span><span style="color: black; text-transform: none; letter-spacing: 0pt; font-family: 'LG스마트체 Regular'; font-size: 14pt; font-style: normal; font-variant: normal; font-weight: bold; language: en-US;"> </span><span style="color: black; text-transform: none; letter-spacing: 0pt; font-family: 'LG스마트체 Regular'; font-size: 14pt; font-style: normal; font-variant: normal; font-weight: bold; language: ko;">필수 호출 함수</span><span style="color: black; text-transform: none; letter-spacing: 0pt; font-family: 'LG스마트체 Regular'; font-size: 14pt; font-style: normal; font-variant: normal; font-weight: bold; language: en-US;">
+</span></p>
+ <p style="text-align: justify; margin-top: 3.36pt; margin-bottom: 0pt; margin-left: 0in; unicode-bidi: embed; direction: ltr; language: ko; punctuation-wrap: hanging;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 14pt; font-weight: bold; vertical-align: baseline; language: en-US;">&nbsp;</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 14pt; font-weight: bold; language: en-US;">this.com_fromInit</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 14pt; font-weight: bold; language: en-US;">(</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 14pt; font-weight: bold; language: en-US;">obj</span><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 14pt; font-weight: bold; language: en-US;">);</span></p>
+ <p style="text-align: justify; margin-top: 3.36pt; margin-bottom: 0pt; margin-left: 0in; unicode-bidi: embed; direction: ltr; language: ko; punctuation-wrap: hanging;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 14pt; font-weight: bold; language: ko;">위 함수만 호출되어 있으면 특별</span><span style="color: black; text-transform: none; letter-spacing: 0pt; font-family: 'LG스마트체 Regular'; font-size: 14pt; font-style: normal; font-variant: normal; font-weight: bold; vertical-align: baseline; language: ko;">히 설정할 필요는 없다</span><span style="color: black; text-transform: none; letter-spacing: 0pt; font-family: 'LG스마트체 Regular'; font-size: 14pt; font-style: normal; font-variant: normal; font-weight: bold; vertical-align: baseline; language: en-US;">.</span><span style="color: black; text-transform: none; letter-spacing: 0pt; font-family: 'LG스마트체 Regular'; font-size: 16pt; font-style: normal; font-variant: normal; font-weight: bold; vertical-align: baseline; language: ko;">
+</span></p>
+ <p style="font-family: 굴림; font-size: 9pt;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: en-US;"><span style="color: black; font-family: 'LG스마트체 Regular'; font-size: 20pt; font-weight: bold; language: ko;"></span></span></span></p>
+</body></html>

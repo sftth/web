@@ -1,0 +1,463 @@
+﻿
+/***************************************************************************/
+/****************************    Intro Login Frame	****************************/
+/***************************************************************************/
+
+/************************************ B ************************************/
+
+/* btn_Intro */
+Button.btn_Intro,
+Button.btn_Intro:focused, Button.btn_Intro:selected, Button.btn_Intro:mouseover, Button.btn_Intro:pushed, Button.btn_Intro:disabled
+{
+	align			: left middle;
+	background		: transparent;
+	border			: 0 none;
+	color			: #a51c38;
+	font			: antialias 19 LG스마트체,Arial;
+	padding                 : 0 0 0 0;
+}
+
+/************************************ S ************************************/
+/* sta_Intro*/
+
+Static.sta_Intro,
+Static.sta_Intro:focused, Static.sta_Intro:selected, Static.sta_Intro:pushed
+{
+	align			: center middle;
+	background		: #000000cc;
+	border			: 3 solid #c00c3f, 0 none, 0 none, 0 none;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: antialias 23 LG스마트체,Arial;
+	padding                 : 0 0 0 0;
+	shadow 			: outer 0,5 5 #00000066 ;
+}
+
+Static.sta_Intro:mouseover
+{
+	align			: center middle;
+	background		: #c00c3fcc;
+	border			: 3 solid #c00c3f, 0 none, 0 none, 0 none;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: antialias 23 LG스마트체,Arial;
+	padding                 : 0 0 0 0;
+	shadow 			: outer 0,5 5 #00000066 ;
+}
+Static.sta_Intro:disabled
+{
+	align			: center middle;
+	background		: #00000099;
+	border			: 3 solid #c00c3f, 0 none, 0 none, 0 none;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: antialias 23 LG스마트체,Arial;
+	padding                 : 0 0 0 0;
+	shadow 			: outer 0,5 5 #00000066 ;
+}
+Static.sta_Intro2,
+Static.sta_Intro2:focused, Static.sta_Intro2:selected, Static.sta_Intro2:pushed
+{
+	align			: center middle;
+	background		: #000000cc;
+	border			: 3 solid #c00c3f, 0 none, 0 none, 0 none;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: antialias 23 LG스마트체,Arial;
+	padding                 : 0 0 0 0;
+	shadow 			: outer 0,5 5 #00000066 ;
+}
+
+Static.sta_Intro2:mouseover
+{
+	align			: center middle;
+	background		: #464646cc;
+	border			: 3 solid #c00c3f, 0 none, 0 none, 0 none;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: antialias 23 LG스마트체,Arial;
+	padding                 : 0 0 0 0;
+	shadow 			: outer 0,5 5 #00000066 ;
+}
+Static.sta_Intro2:disabled
+{
+	align			: center middle;
+	background		: #00000099;
+	border			: 3 solid #c00c3f, 0 none, 0 none, 0 none;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: antialias 23 LG스마트체,Arial;
+	padding                 : 0 0 0 0;
+	shadow 			: outer 0,5 5 #00000066 ;
+}
+Static.sta_Intro_Tit
+{
+	align			: left middle;
+	background		: transparent;
+	border			: 0 none;
+	color			: #c00c3f;
+	font			: antialias 68 LG스마트체,Arial;
+	padding                 : 0 0 0 0;
+
+}
+/***************************************************************************/
+/****************************    Login Frame	****************************/
+/***************************************************************************/
+
+/************************************ B ************************************/
+
+
+/* btn_Login_ForgotPW */
+Button.btn_Login_ForgotPW
+{
+	align			: left middle;
+	background		: transparent URL('theme://MainFrame/bullet_Login_Btn.png') left middle;
+	border			: 0 none;
+	color			: #c3c1c1ff;
+	font			: 10 LG스마트체,Arial Narrow;
+	padding			: 0 0 0 13;
+}
+Button.btn_Login_ForgotPW:mouseover, Button.btn_Login_ForgotPW:pushed,
+Button.btn_Login_ForgotPW:focused, Button.btn_Login_ForgotPW:selected
+{
+	background		: transparent URL('theme://MainFrame/bullet_Login_Btn.png') left middle;
+	border			: 0 none;
+	color			: #c3c1c1ff;
+	font			: underline 10 LG스마트체,Arial Narrow;
+}
+Button.btn_Login_ForgotPW:disabled
+{
+	background		: transparent URL('theme://MainFrame/bullet_Login_Btn.png') left middle;
+	border			: 0 none;
+	color			: #999999ff;
+}
+/* btn_Login_ChangePW */
+Button.btn_Login_ChangePW
+{
+	align			: left middle;
+	background		: transparent URL('theme://MainFrame/bullet_Login_Btn.png') left middle;	
+	border			: 0 none;
+	color			: #fcafafff;
+	font			: 10 LG스마트체,Arial Narrow;
+	padding			: 0 0 0 13;
+}
+Button.btn_Login_ChangePW:mouseover, Button.btn_Login_ChangePW:pushed,
+Button.btn_Login_ChangePW:focused, Button.btn_Login_ChangePW:selected
+{
+	background		: transparent URL('theme://MainFrame/bullet_Login_Btn.png') left middle;
+	border			: 0 none;
+	color			: #fcafafff;	
+	font			: underline 10 LG스마트체,Arial Narrow;
+}
+Button.btn_Login_ChangePW:disabled
+{
+	background		: transparent URL('theme://MainFrame/bullet_Login_Btn.png') left middle;
+	border			: 0 none;
+	color			: #999999ff;
+}
+/* btn_Login */
+Button.btn_Login,
+Button.btn_Login:focused, Button.btn_Login:selected
+{
+	background		: URL('theme://MainFrame/btn_Login_Bg.png');
+	border			: 1 solid #0d0d0dff;
+	color			: #ffffffff;
+	font			: antialias bold 9 LG스마트체,Arial;
+}
+Button.btn_Login:mouseover, Button.btn_Login:pushed
+{
+	background		: URL('theme://MainFrame/btn_Login_Bg.png');
+	border			: 1 solid #0d0d0dff;
+	color			: #ffffffff;
+	font			: underline antialias bold 9 LG스마트체,Arial;
+}
+Button.btn_Login:disabled
+{
+	background		: URL('theme://MainFrame/btn_Login_Bg.png');
+	border			: 1 solid #0d0d0dff;
+	color			: #ffffff50;
+	font			: antialias bold 9 LG스마트체,Arial;
+}
+/* btn_Login_Transparent */
+Button.btn_Login_Transparent
+{
+	background		: transparent;
+	border			: 0 none;
+	color			: #ffffffff;
+	font			: 10 LG스마트체,Arial Narrow;
+}
+Button.btn_Login_Transparent:mouseover, Button.btn_Login_Transparent:pushed,
+Button.btn_Login_Transparent:focused, Button.btn_Login_Transparent:selected
+{
+	background		: transparent;
+	border			: 0 none;
+	color			: #ffffffff;
+	font			: underline 10 LG스마트체,Arial Narrow;
+}
+Button.btn_Login_Transparent:disabled
+{
+	background		: transparent;
+	border			: 0 none;
+	color			: #ffffff50;
+	font			: 10 LG스마트체,Arial Narrow;
+}
+
+/************************************ C ************************************/
+
+/* CheckBox */
+CheckBox.chk_Login
+{
+	buttonborder			: 1 solid #c7c7c7ff;
+	buttonsize			: 14;
+	color				: #c3c1c1ff;
+	font				: 9 LG스마트체,Arial;
+	textpadding			: 0 0 0 6;
+}
+CheckBox.chk_Login:mouseover, CheckBox.chk_Login:pushed,
+CheckBox.chk_Login:focused, CheckBox.chk_Login:selected
+{
+	buttonborder			: 1 solid #c7c7c7ff;
+	font				: underline 9 LG스마트체,Arial;
+}
+CheckBox.chk_Login:disabled
+{
+	opacity				: 50%;
+}
+
+/************************************ E ************************************/
+
+/* Edit */
+Edit.edt_Login_ID,
+Edit.edt_Login_ID:mouseover,Edit.edt_Login_ID:pushed,
+Edit.edt_Login_ID:focused, Edit.edt_Login_ID:selected, 
+Edit.edt_Login_ID:disabled
+{
+	background		: #faf1f4ff URL('theme://MainFrame/icon_Login_ID.png') left middle;
+	border			: 1 solid #bdbdbdff;
+	bordertype		: normal;
+	font			: 9 LG스마트체,Arial;
+	padding			: 0 10 0 34;
+}
+Edit.edt_Login_PW,
+Edit.edt_Login_PW:mouseover, Edit.edt_Login_PW:pushed,
+Edit.edt_Login_PW:focused, Edit.edt_Login_PW:selected, 
+Edit.edt_Login_PW:disabled
+{
+	background		: #f7f7f7ff URL('theme://MainFrame/icon_Login_PW.png') left middle;
+	border			: 1 solid #bdbdbdff;
+	bordertype		: normal;
+	font			: 9 LG스마트체,Arial;
+	padding			: 0 10 0 34;
+}
+
+/************************************ S ************************************/
+
+/* Static */
+
+/* sta_Login_Logo */
+Static.sta_Login_Logo
+{
+	background		: URL('theme://Mainframe/img_Login_Logo.png');
+}
+/* sta_Login_Copyright */
+Static.sta_Login_Copyright
+{
+	align			: center middle;
+	font			: 9 LG스마트체,Arial Narrow;
+	color			: #5b6872ff;
+}
+/* sta_Login_ChkArea */
+Static.sta_Login_ChkArea
+{
+	background		: #1e1e1e;
+	bordertype		: round 3 3;
+	opacity			: 69%;
+}
+/* sta_Login_Bg */
+Static.sta_Login_Bg
+{
+	background		: URL('theme://MainFrame/img_Login_Bg.png');
+	border			: 1 solid #586c97ff;
+}
+/* sta_Login_InputAreaBg */
+Static.sta_Login_InputAreaBg
+{
+	background		: URL('theme://MainFrame/img_Login_InputAreaBg.png');
+}
+/* sta_Login_Title */
+Static.sta_Login_Title
+{
+	background		: URL('theme://MainFrame/img_Login_Title.png');
+}
+/* sta_CF_Title */
+Static.sta_CF_Title, Static.sta_CF_Title:disabled
+{
+	background		: URL('theme://MainFrame/icon_CF_Title.png') left middle;
+	font			: antialias bold 12 LG스마트체,Arial;
+	padding			: 0 0 0 25;
+}
+
+/***************************************************************************/
+/****************************     MainFrame	****************************/
+/***************************************************************************/
+
+/************************************ B ************************************/
+/* btn_MF_More */
+Button.btn_MF_More,
+Button.btn_MF_More:focused, Button.btn_MF_More:selected, Button.btn_MF_More:disabled
+{
+	align			: center middle;
+	background		: URL('theme://MainFrame/icon_MF_More.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #26333dff;
+	font			: antialias 9 LG스마트체,Arial Narrow;
+	padding			: 0 0 0 0;
+}
+Button.btn_MF_More:mouseover, Button.btn_MF_More:pushed
+{
+	align			: center middle;
+	background		: URL('theme://MainFrame/icon_MF_More_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #26333dff;
+	font			: antialias 9 LG스마트체,Arial Narrow;
+	padding			: 0 0 0 0;
+}
+
+
+/************************************ S ************************************/
+Static.sta_MF_Tit
+{
+	align			: left middle;
+	background		: URL('theme://MainFrame/img_MF_Title.png') left top;
+	border			: 0 none;
+	color			: #ffffff;
+	font			: antialias 45 LG스마트체,Arial;
+	padding                 : 0 0 0 0;
+
+}
+Static.sta_MF_Title
+{
+	align			: left middle;
+	background		: transparent;
+	border			: 0 none;
+	color			: #ffffff;
+	font			: antialias 14 LG스마트체,Arial;
+	padding                 : 0 0 0 0;
+}
+Static.sta_MF_GridTxt
+{
+	align			: right middle;
+	color			: #57595cff;
+}
+
+/************************************ T ************************************/
+
+Tab.tab_MF, 
+Tab.tab_MF:mouseover, Tab.tab_MF:pushed, 
+Tab.tab_MF:focused
+{
+	background		: transparent;
+	border			: 1 solid #c4c8cbff, 0 none, 0 none, 0 none;
+	buttonbackground	: #f0f1f3ff;
+	buttonpadding		: 9 51 9 51;
+	font			: antialias 11 LG스마트체,Arial;
+	color			: #26333dff;
+}
+Tab.tab_MF:selected
+{
+	background		: transparent;
+	border			: 1 solid #c4c8cbff, 0 none, 0 none, 0 none;
+	buttonbackground	: URL('theme://MainFrame/tab_MF_BgS.png') stretch 5,5;
+	buttonborder		: 1 solid #ffffff00;
+	buttonpadding		: 9 51 9 51;
+	font			: antialias 11 LG스마트체,Arial;
+	color			: #94243aff;
+}
+/************************************ G ************************************/
+/* Grid */
+Grid.grd_MF
+{
+	background			: transparent;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	color				: #ffffff;
+	cursor				: ;
+	font				: antialias 9 LG스마트체,Arial;
+	gradation			: ;
+	line				: ;
+	opacity				: ;
+	padding				: ;
+	selectline			: ;
+	selectpointimagez		: ;
+	shadow				: ;
+	treeclosebuttonimage		: URL('theme://images/img_WF_TreeClose.png');
+	treecollapseimage		: ;
+	treeexpandimage			: ;
+	treeitemimage			: URL('theme://images/img_WF_TreeItem.png');
+	treeitemmargin			: ;
+	treelinetype			: 1 dotted #929aa5;
+	treeopenbuttonimage		: URL('theme://images/img_WF_TreeOpen.png');
+}
+Grid.grd_MF>#head
+{
+	background			: transparent;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	cellalign			: center middle;
+	cellbackground			: transparent;
+	cellbackground2			: transparent;
+	cellcolor			: #ffffff;
+	cellcolor2			: #ffffff;
+	cellfont			: antialias bold 9 LG스마트체,Arial;
+	cellgradation			: ;
+	cellgradation2			: ;
+	cellline			: 0 none;
+	celllinespace			: ;
+	cellpadding			: 0 0 0 0;
+	gradation			: ;
+	selectbackground		: ;
+	selectcolor			: ;
+	selectfont			: ;
+	selectgradation			: ;
+	selectline			: ;
+	linespace			: 3;
+}
+
+Grid.grd_MF>#body, Grid.grd_MF>#body:disabled
+{
+	background			: transparent;
+	border				: 0 none;
+	bordertype			: normal 0 0;
+	cellalign			: left middle;
+	cellbackground			: transparent;
+	cellbackground2			: transparent;
+	cellcolor			: #ffffff;
+	cellcolor2			: #ffffff;
+	cellfont			: antialias 9 LG스마트체,Arial;
+	cellgradation			: ;
+	cellgradation2			: ;
+	cellline			: 0 none;
+	celllinespace			: ;
+	cellpadding			: 0 0 0 0;
+	gradation			: ;
+	selectbackground		: transparent;
+	selectcolor			: #ffffff;
+	selectfont			: antialias underline bold 9 LG스마트체,Arial;
+	selectgradation			: ;
+	selectline			: /*1 solid #eebecdff*/;/**/
+}
+Grid.grd_MF>#body:mouseover
+{
+	cellbackground			: transparent;
+	cellbackground2			: transparent;
+	selectbackground		: transparent;
+}
+/*Grid.grd_MF>#head
+{
+	cellfont		: bold 9 Arial;
+}*/
+
+
+{}

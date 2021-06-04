@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+<input type="button" value="get" onclick="fn_aaa()">
+<input type="button" value="post" onclick="fn_bbb()">
+
+
+<script type="text/javascript">
+
+
+	function fn_aaa()
+	{
+		alert("get");
+		var form = document.getElementById("frm1");
+		form.submit();
+
+	}
+
+	function fn_bbb()
+	{
+		alert("post");
+		var form = document.getElementById("frm2");
+		form.submit();
+
+	}
+
+</script>
+
+ <body>
+
+
+
+
+
+  <form method="get" id="frm1"  name="frm1" action="./QuickView.jsp">
+	<input type="text" name="formname" value="ism::ISM010_02.xfdl"></br>
+	<input type="text" name="issueno" value="GM-LV105NB-ZERO-20170830-001" ></br>
+	<input type="text" name="procid" value="B2B_ANL"></br>
+	<input type="text" name="stage" value="1"></br>
+	<input type="text" name="userid" value="279719"></br>
+  </form>
+</br>
+</br>
+</br>
+
+  <form method="post" id="frm2"  name="frm2" action="./QuickView.jsp">
+	<input type="text" name="formname" value="ism::ISM010_02.xfdl"></br>
+	<input type="text" name="issueno" value="GM-LV105NB-ZERO-20170830-001" ></br>
+	<input type="text" name="procid" value="B2B_ANL"></br>
+	<input type="text" name="stage" value="1"></br>
+	<input type="text" name="userid" value="279719"></br>
+  </form>
+
+ </body>
+</html>

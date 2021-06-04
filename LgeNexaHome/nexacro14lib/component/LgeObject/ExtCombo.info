@@ -1,0 +1,329 @@
+﻿<?xml	version='1.0' encoding='utf-8'?>
+<MetaInfo version="1.0">
+	<Object id="nexacro.ExtCombo">
+		<!-- define	extend component based nexacro.Combo -->
+		<ObjectInfo
+			inheritance="nexacro.Div"
+			typename="nexacro.ExtCombo"
+			csstypename="Div"
+			csscontrolname="DivControl"
+			group="UIComponent"
+			csspseudo="true"
+			container="false"
+			composite="true"
+			tabstop="true"
+			cssstyle="true"
+			contents="true"
+			formats="false"
+			contentseditor="auto"
+			defaultwidth="200"
+			defaultheight="21"
+			requirement="Runtime,HTML5"
+			description=""/>
+
+		<PseudoInfo>
+			<Pseudo name="pushed" control="true" deprecated="false" unused="false"/>
+			<Pseudo name="disabled"	control="true"	deprecated="false" unused="true"/>
+			<Pseudo name="focused" control="true" deprecated="false"	unused="true"/>
+			<Pseudo name="mouseover" control="true" deprecated="false" unused="true"/>
+			<Pseudo name="selected"	control="true"	deprecated="false" unused="true"/>
+		</PseudoInfo>
+
+		<ControlInfo></ControlInfo>
+
+		<PropertyInfo>
+			<!-- define	new property -->
+			<Property
+				name="bindColumn"
+				group="Misc"
+				type="String"
+				defaultvalue=""
+				readonly="false"
+				initonly="false"
+				hidden="false"
+				control="false"
+				style="false"
+				expr="false"
+				deprecated="false"
+				unused="false"
+				objectinfo=""
+				enuminfo=""
+				unitinfo=""
+				requirement="Runtime,HTML5"
+				description=""/>
+			<Property
+				name="bindColumnSet"
+				group="Misc"
+				type="String"
+				defaultvalue=""
+				readonly="false"
+				initonly="false"
+				hidden="false"
+				control="false"
+				style="false"
+				expr="false"
+				deprecated="false"
+				unused="false"
+				objectinfo=""
+				enuminfo=""
+				unitinfo=""
+				requirement="Runtime,HTML5"
+				description=""/>
+			<Property
+				name="bindDataset"
+				group="Misc"
+				type="Dataset"
+				defaultvalue=""
+				readonly="false"
+				initonly="false"
+				hidden="false"
+				control="false"
+				style="false"
+				expr="false"
+				deprecated="false"
+				unused="false"
+				objectinfo=""
+				enuminfo=""
+				unitinfo=""
+				requirement="Runtime,HTML5"
+				description=""/>
+			<Property
+				name="required"
+				group="Misc"
+				type="String"
+				defaultvalue=""
+				readonly="false"
+				initonly="false"
+				hidden="false"
+				control="false"
+				style="false"
+				expr="false"
+				deprecated="false"
+				unused="false"
+				objectinfo=""
+				enuminfo=""
+				unitinfo=""
+				requirement="Runtime,HTML5"
+				description=""/>
+			<Property
+				name="gridFormats"
+				group="Misc"
+				type="String"
+				defaultvalue=""
+				readonly="false"
+				initonly="false"
+				hidden="false"
+				control="false"
+				style="false"
+				expr="false"
+				deprecated="false"
+				unused="false"
+				objectinfo=""
+				enuminfo=""
+				unitinfo=""
+				requirement="Runtime,HTML5"
+				description="선택	Popup	Div내의 Grid내의 Formats를	지정하는	Property	입니다."/>
+			<Property
+				name="codeColumn"
+				group="Binding"
+				type="String"
+				defaultvalue= ""
+				readonly="false"
+				initonly="false"
+				hidden="false"
+				control="false"
+				style="false"
+				expr="false"
+				deprecated="false"
+				unused="false"
+				objectinfo=""
+				enuminfo=""
+				unitinfo=""
+				requirement="Runtime,HTML5"
+				description=""/>
+			<Property
+				name="innerDataset"
+				group="Binding"
+				type="Dataset"
+				defaultvalue= ""
+				readonly="false"
+				initonly="false"
+				hidden="false"
+				control="false"
+				style="false"
+				expr="false"
+				deprecated="false"
+				unused="false"
+				objectinfo=""
+				enuminfo=""
+				unitinfo=""
+				requirement="Runtime,HTML5"
+				description=""/>
+			<Property
+				name="inputmode"
+				group="Misc"
+				type="String"
+				defaultvalue=""
+				readonly="false"
+				initonly="false"
+				hidden="false"
+				control="false"
+				style="false"
+				expr="false"
+				deprecated="false"
+				unused="false"
+				objectinfo=""
+				enuminfo=""
+				unitinfo=""
+				requirement="Runtime,HTML5"
+				description=""/>
+			<Property
+				name="textColumn"
+				group="Binding"
+				type="String"
+				defaultvalue= ""
+				readonly="false"
+				initonly="false"
+				hidden="false"
+				control="false"
+				style="false"
+				expr="false"
+				deprecated="false"
+				unused="false"
+				objectinfo=""
+				enuminfo=""
+				unitinfo=""
+				requirement="Runtime,HTML5"
+				description=""/>
+		</PropertyInfo>
+
+		<MethodInfo>
+			<Method
+				name="setIndex"
+				group=""
+				async="false"
+				deprecated="false"
+				unused="false"
+				requirement="Runtime,HTML5"
+				description="this	is	test method">
+				<Syntax text =	"setValue(sValue)">
+					<Return/>
+					<Arguments>
+						<Argument
+							name="nIndex"
+							type="Number"
+							in="true"
+							out="false"
+							option="false"
+							variable="false"
+							description="Combo Index"/>
+					</Arguments>
+				</Syntax>
+			</Method>
+			<Method
+				name="getIndex"
+				group=""
+				async="false"
+				deprecated="false"
+				unused="false"
+				requirement="Runtime,HTML5"
+				description="this	is	test method">
+				<Syntax text =	"setValue()">
+					<Return>
+						<Argument
+							name="nIndex"
+							type="Number"
+							in="true"
+							out="false"
+							option="false"
+							variable="false"
+							description="Combo Index"/>
+					</Return>
+					<Arguments/>
+				</Syntax>
+			</Method>
+			<Method
+				name="setValue"
+				group=""
+				async="false"
+				deprecated="false"
+				unused="false"
+				requirement="Runtime,HTML5"
+				description="this	is	test method">
+				<Syntax text =	"setIndex(nIndex)">
+					<Return/>
+					<Arguments>
+						<Argument
+							name="nIndex"
+							type="Number"
+							in="true"
+							out="false"
+							option="false"
+							variable="false"
+							description="any string"/>
+					</Arguments>
+				</Syntax>
+			</Method>
+			<Method
+				name="getValue"
+				group=""
+				async="false"
+				deprecated="false"
+				unused="false"
+				requirement="Runtime,HTML5"
+				description="this	is	test method">
+				<Syntax text =	"getValue()">
+					<Return/>
+				</Syntax>
+			</Method>
+			<Method
+				name="getValueSet"
+				group=""
+				async="false"
+				deprecated="false"
+				unused="false"
+				requirement="Runtime,HTML5"
+				description="this	is	test method">
+				<Syntax text =	"getValueSet()">
+					<Return/>
+				</Syntax>
+			</Method>
+			<Method
+				name="getText"
+				group=""
+				async="false"
+				deprecated="false"
+				unused="false"
+				requirement="Runtime,HTML5"
+				description="this	is	test method">
+				<Syntax text =	"getText()">
+					<Return/>
+				</Syntax>
+			</Method>
+			<Method
+				name="openPopup"
+				group=""
+				async="false"
+				deprecated="false"
+				unused="false"
+				requirement="Runtime,HTML5"
+				description="this	is	test method">
+				<Syntax text =	"openPopup()">
+					<Return/>
+				</Syntax>
+			</Method>
+			<Method
+				name="closePopup"
+				group=""
+				async="false"
+				deprecated="false"
+				unused="false"
+				requirement="Runtime,HTML5"
+				description="this	is	test method">
+				<Syntax text =	"closePopup()">
+					<Return/>
+				</Syntax>
+			</Method>
+		</MethodInfo>
+	</Object>
+</MetaInfo>
