@@ -8,7 +8,7 @@
         this.loadTypedefition = function()
         {
             // this._addService(prefixid, type, url, cachelevel, codepage, language, version, communication);
-            this._addService("default_typedef.xml", "host", "JSP", "http://demo-web-demo-mw.apps-crc.testing/", "", null, "", "0", "0");
+            this._addService("default_typedef.xml", "host", "JSP", "http://nip-web-demo-mw.apps-crc.testing/", "", null, "", "0", "0");
             this._addService("default_typedef.xml", "nexacro14lib", "file", "./nexacro14lib/", "", null, "", "0", "0");
             this._addService("default_typedef.xml", "css", "file", "./css/", "", null, "", "0", "0");
             this._addService("default_typedef.xml", "images", "file", "./images/", "", null, "", "0", "0");
